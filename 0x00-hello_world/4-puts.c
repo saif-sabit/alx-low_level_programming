@@ -2,9 +2,7 @@
 #include<string.h>
 /**
  * main - Entry point
- * 
  * Description: 'Program that print String line'
- * 
  * Return: Always 0 (Success)
  */
 int main(void)
