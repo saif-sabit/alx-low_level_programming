@@ -18,15 +18,15 @@ int main(void)
 		for (m = n + 1; m <= 99; m++)
 		{
 			putchar(n / 10 + '0');
-			putchar(n / 10 + '0');
+			putchar(n % 10 + '0');
 			putchar(' ');
 			putchar(m / 10 + '0');
-			putchar(m / 10 + '0');
+			putchar(m % 10 + '0');
 			if (!((n == 98) && (m == 99)))
 			{
 			putchar(',');
 			putchar(' ');
-			}	
+			}
 		}
 		n++;
 	}
