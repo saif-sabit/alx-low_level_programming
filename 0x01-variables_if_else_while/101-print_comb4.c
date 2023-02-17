@@ -17,12 +17,12 @@ int main(void)
 	{
 	for (m = n + 1; m < 10; m++)
 	{
-		for(i = m+1; i < 10; i++)
+		for (i = m + 1; i < 10; i++) 
 		{
 		putchar(n + '0');
 		putchar(m + '0');
 		putchar(i + '0');
-		if (!((i == 7) && (n == 8) && (m == 9)))
+		if (!((i == 9) && (n == 8) && (m == 8)))
 		{
 			putchar(',');
 			putchar(' ');
