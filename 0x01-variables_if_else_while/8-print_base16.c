@@ -12,7 +12,7 @@ int main(void)
 	char c;
 	int n = 0;
 
-	while (n < 16)
+	while (n < 10)
 	{
 		putchar(n + '0');
 		n++;
