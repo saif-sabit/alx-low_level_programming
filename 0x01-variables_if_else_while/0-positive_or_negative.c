@@ -2,10 +2,10 @@
 #include <time.h>
 #include<stdio.h>
 
-/*
- * main function -entry of program
- *the program shows whether the generated number is positive or negative
- *always return 0
+/**
+ * main - Entry point
+ * Description: 'Program that prints whether number is positive or negative or zero using printf'
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -16,8 +16,7 @@ int main(void)
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
-	} 
-	else if (n < 0)
+	} else if (n < 0)
 	{
 		printf("%d is negative\n", n);
 	}
