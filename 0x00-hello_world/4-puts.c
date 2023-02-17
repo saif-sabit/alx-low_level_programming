@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include<string.h>
-/*This is sthe start point of program which prints sigle line using puts*/
+/**
+ * main - Entry point
+ * 
+ * Description: 'Program that print String line'
+ * 
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
