@@ -9,12 +9,17 @@
  */
 int main(void)
 {
+	char c;
 	int n = 0;
 
 	while (n < 16)
 	{
 		putchar(n + '0');
 		n++;
+	}
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c);
 	}
 	putchar('\n');
 
