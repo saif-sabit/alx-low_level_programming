@@ -11,33 +11,23 @@ int main(void)
 {
 	int n = 0;
 	int m;
-	int i;
-	int j;
 
-	while (n < 10)
-	{
-	for (m = 0; m < 10; m++)
-	{
-		for (i = 0 ; i < 10; i++)
-		{
-			for (j = i + 1 ; j < 10; j++)
-			{
 
-			if (!((((i == 0) && (j == 0)))))
-			{
+	while (n < 98)
+	{
+	for (m = 0; m < 99; m++)
+	{
 			putchar(n + '0');
 			putchar(m + '0');
 			putchar(' ');
 			putchar(i + '0');
 			putchar(j + '0');
-			if (!((((i == 9) && (j == 9)) && ((m == 8) && (n == 9)))))
+			if (!((n == 98) && (m == 99)))
 			{
 			putchar(',');
 			putchar(' ');
 			}
-			}
-			}
-		}
+	
 	}
 		n++;
 	}
