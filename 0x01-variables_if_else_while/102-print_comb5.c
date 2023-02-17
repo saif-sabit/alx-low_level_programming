@@ -15,8 +15,8 @@ int main(void)
 
 	while (n < 98)
 	{
-	for (m = 0; m < 99; m++)
-	{
+		for (m = n + 1; m < 99; m++)
+		{
 			putchar(n / 10 + '0');
 			putchar(n / 10 + '0');
 			putchar(' ');
@@ -28,7 +28,7 @@ int main(void)
 			putchar(' ');
 			}
 	
-	}
+		}
 		n++;
 	}
 	putchar('\n');
