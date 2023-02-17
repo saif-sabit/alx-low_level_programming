@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- * Description: 'Program that prints whether number is positive or negative or zero using printf'
+ * Description: 'Program that prints positive or negative or zero using printf'
  * Return: Always 0 (Success)
  */
 int main(void)
