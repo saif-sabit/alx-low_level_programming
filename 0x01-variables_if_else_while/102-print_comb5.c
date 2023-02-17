@@ -12,6 +12,7 @@ int main(void)
 	int n = 0;
 	int m;
 	int i;
+	int j;	
 
 	while (n < 10)
 	{
