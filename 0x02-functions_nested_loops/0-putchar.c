@@ -1,7 +1,7 @@
 #include "main.h"
 /*
  *main entry pint of program
- *Description method main print _putchar
+ *Description 'method main print _putchar'
  *always return 0
 */
 int main(void)
