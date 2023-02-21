@@ -1,8 +1,9 @@
 #include "main.h"
 /**
-* Description :  ' prints letters from a to z'
-* returns void
-*/
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 void print_alphabet(void)
 {
 	char c;
