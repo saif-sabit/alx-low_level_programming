@@ -1,5 +1,8 @@
 #include "main.h"
-/* prints letters from a to z*/
+/**
+* Description :  ' prints letters from a to z'
+* returns void
+*/
 void print_alphabet(void)
 {
 	char c;
