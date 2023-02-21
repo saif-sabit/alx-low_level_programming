@@ -4,6 +4,7 @@
  *Description method main print _putchar
  *always return 0
 */
+/* this is the starting point of program
 int main(void)
 {
 	int i = 0;
