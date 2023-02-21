@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_alphabet - English 
+ *Description :prints letters from a to z
+ * Return: Always void
  */
+
 void print_alphabet(void)
 {
 	char c;
