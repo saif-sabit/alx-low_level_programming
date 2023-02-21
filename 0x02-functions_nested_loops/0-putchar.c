@@ -1,9 +1,9 @@
 #include "main.h"
-/*
- *main entry pint of program
- *Description: 'method main print _putchar'
- *always return 0
-*/
+/**
+ * main - Print "_putchar" followed by a new line.
+ * Description: You are not allowed to include standard libraries.
+ * Return: 0
+ */
 int main(void)
 {
 	int i = 0;
