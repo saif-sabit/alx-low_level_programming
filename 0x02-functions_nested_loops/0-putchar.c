@@ -4,7 +4,7 @@
  *
  *always return 0
  */
-void main() {
+int main() {
 	int i=o;
 	char* str="_putchar";
 	while(str[i] !='\0') {
