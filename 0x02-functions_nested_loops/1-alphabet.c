@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - English 
+ * print_alphabet - English
  *Description :prints letters from a to z
  * Return: Always void
  */
