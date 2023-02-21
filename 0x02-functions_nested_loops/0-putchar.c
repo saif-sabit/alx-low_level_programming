@@ -4,6 +4,7 @@
  *
  *always return 0
  */
+int _putchar(char c);
 int main() {
 	int i = 0;
 	char* str = "_putchar";
