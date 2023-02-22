@@ -2,7 +2,7 @@
 /**
  * print_sign - Return 1 if number is positive and 0 if zero and -1 if negative
  * @c: char type number
- * return  1,-1 or 0
+ * always Returns  1,-1 or 0
  */
 int print_sign(int c)
 {
@@ -11,11 +11,13 @@ int print_sign(int c)
 		_putchar('+');
 		return (1);
 	}
-	else if (c < 0) {
+	else if (c < 0)
+	{
 		_putchar('-');
 		return (-1);
 	}
-	else{
+	else
+	{
 	_putchar('0');
 	return (0);
 	}
