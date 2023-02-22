@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - entry point
- * program 
- * 
+ * program
+ *
  * Return: always return 0
  */
 int main(void)
@@ -17,10 +17,8 @@ int main(void)
 	for (i = 0; i < 48; i++)
 	{
 		arr[i + 2] = arr[i] + arr[i + 1];
-		if (i==47)
+		if (i == 47)
 		{
-
-
 		printf("%ld", arr[i + 2]);
 		}
 		else
