@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * jack_bauer - Return last digit
- * 
+ *
  *Return: last digit
  */
 void jack_bauer(void)
