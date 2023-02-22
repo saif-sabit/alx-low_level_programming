@@ -12,10 +12,10 @@ int print_last_digit(int c)
 		_putchar(c + '0');
 		return (c);
 	}
-	else if (c == 0)
+	else if (c == 0|| c = INT_MIN)
 	{
 		_putchar('0');
-		return(0);
+		return (0);
 	}
 	else
 	{
