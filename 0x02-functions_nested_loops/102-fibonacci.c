@@ -19,7 +19,7 @@ int main(void)
 		arr[i + 2] = arr[i] + arr[i + 1];
 		if (i == 47)
 		{
-		printf("%ld ", arr[i + 2]);
+		printf("%ld\n", arr[i + 2]);
 		}
 		else
 		{
