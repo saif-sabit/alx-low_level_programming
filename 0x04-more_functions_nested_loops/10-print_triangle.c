@@ -2,7 +2,7 @@
 
 /**
  * print_triangle- prints triangle of #
- * @:size: int type number
+ * @size: int type number
  */
 
 void print_triangle(int size)

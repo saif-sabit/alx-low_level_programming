@@ -37,8 +37,9 @@ void _fizzBuzz(void)
 
 /**
  * main- checks function
- * return: always 0
-*/
+ *
+ * Return: always 0
+ */
 
 int main(void)
 {
