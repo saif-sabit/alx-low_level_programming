@@ -1,18 +1,20 @@
 #include "main.h"
+
 /**
- * void print_numbers prints numbers from 0 to 9
+ * print_numbers- prints numbers from 0 to 9
  * has no param
- * returns nothing
+ * Return: nothing
 */
 void print_numbers(void)
 {
-    int i;
-    i = 0;
+	int i;
 
-    for(i = 0; i < 10; i++)
-    {
-        _putchar(i + '0');
-    }
-    _putchar('\n');
+	i = 0;
+
+	for (i = 0; i < 10; i++)
+	{
+		_putchar(i + '0');
+	}
+	_putchar('\n');
 
 }
