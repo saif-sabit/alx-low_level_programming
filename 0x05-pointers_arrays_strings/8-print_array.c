@@ -1,4 +1,5 @@
-#include "main.h";
+#include "main.h"
+#include <stdio.h>
 /**
  *
  *
@@ -11,4 +12,5 @@ void print_array(int *a, int n)
 	i = 0;
 
 	for (; i < n;i++)
-		printf("%d",a[i]);
+		printf("%d\n",a[i]);
+}
