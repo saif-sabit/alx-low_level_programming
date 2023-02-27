@@ -3,14 +3,14 @@
  * *_strcpy - copies string from source to destination
  * @dest : destination pointer
  * @src : source pointer
- * Returns: pointer of copied string
+ * Return : pointer of copied string
  */
 char *_strcpy(char *dest, char *src)
 {
 	int i;
 
 	i = 0;
-
+	if (str != NULL)
 	while (1)
 	{
 		dest[i] = src[i];
