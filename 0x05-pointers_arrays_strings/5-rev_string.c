@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_rev - print reverse string
+ * rev_string - print reverse string
  * @s: char type string
  * Returns nothing
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int count;
 
@@ -19,5 +19,4 @@ void print_rev(char *s)
 		_putchar(s[count]);
 		count--;
 	}
-	_putchar('\n');
 }
