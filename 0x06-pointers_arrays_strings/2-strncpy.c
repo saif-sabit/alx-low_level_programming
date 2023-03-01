@@ -4,7 +4,7 @@
  * @dest: char pointer type string
  * @src: char pointer type string
  * @n: unsigned int type number
- * Return - pointer of copied string
+ * Return:  pointer of copied string
  */
 
 char *_strncpy(char *dest, char *src, int n)
