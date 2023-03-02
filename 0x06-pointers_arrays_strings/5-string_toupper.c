@@ -2,7 +2,7 @@
 /**
  * string_toupper - all lower case into upper
  * @s :pointer type char
- * return - pointer of type char
+ * Return: pointer of type char
  */
 char *string_toupper(char *s)
 {
