@@ -7,7 +7,7 @@
 char *cap_string(char *s)
 {
 	char a[] = { ',', ';', ' ', '.', '!', '?', '"', '(', ')', '{', '}'};
-	int i, j, k;
+	int i, j;
 
 	i = -1;
 	j = 0;
