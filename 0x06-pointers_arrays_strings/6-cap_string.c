@@ -11,7 +11,6 @@ char *cap_string(char *s)
 
 	i = -1;
 	j = 0;
-	k = -1;
 
 	while (s[i] != '\0')
 	{
@@ -24,7 +23,6 @@ char *cap_string(char *s)
 					break;
 				}
 		}
-		k = 0;
 		i++;
 	}
 	return (s);
