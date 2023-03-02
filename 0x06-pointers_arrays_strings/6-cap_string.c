@@ -17,13 +17,14 @@ char *cap_string(char *s)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (i == -1 || s[i] == a[j] || s[i] == 9 || s[i] == 10)
+			if (k == -1 || s[i] == a[j] || s[i] == 9 || s[i] == 10)
 				if (s[i + 1] > 96 && s[i + 1] < 123)
 				{
 					s[i + 1] = s[i + 1] - 32;
 					break;
 				}
 		}
+		k = 0;
 		i++;
 	}
 	return (s);
