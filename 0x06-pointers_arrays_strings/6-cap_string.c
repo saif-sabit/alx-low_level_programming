@@ -7,10 +7,11 @@
 char *cap_string(char *s)
 {
 	char a[] = { ',', ';', ' ', '.', '!', '?', '"', '(', ')', '{', '}'};
-	int i, j;
+	int i, j, k;
 
-	i = -1;
+	i = 0;
 	j = 0;
+	k = -1;
 
 	while (s[i] != '\0')
 	{
