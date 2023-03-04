@@ -7,17 +7,20 @@
 
 char *rot13(char *s)
 {
-	int i;
+	int i, j;
+	char []letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	i = 0;
-
-	while (s[i] != '\0')
+	while (*(s + count) != '\0')
 	{
-		if ((s[i] > 96 && s[i] < 123))
-			s[i] = ((s[i] - 'a' + 13) % 26) + 'a';
-		else if (s[i] > 64 && s[i] < 91)
-			s[i] = ((s[i] - 'A' + 13) % 26) + 'A';
-		i++;
+		for (i = 0; i < 52; i++)
+		{
+			if (*(s + count) == alphabet[i])
+			{
+				*(s + count) = rot13[i];
+				break;
+			}
+		}
+	count++;
 	}
-	return (s);
 }
