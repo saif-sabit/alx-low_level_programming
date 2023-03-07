@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strpbrk - search source string about occurance in s
  * @s: pointer to source string
