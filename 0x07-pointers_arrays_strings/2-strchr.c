@@ -21,7 +21,7 @@ char *_strchr(char *s, char c)
 		n++;
 		i++;
 	}
-	if (n[i] =='\0')
+	if (n[i] == '\0')
 		return (NULL);
 	else
 		return (n);
