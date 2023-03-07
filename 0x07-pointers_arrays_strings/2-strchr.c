@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - detects particular char in string
  * @s: pointer to string
@@ -20,5 +21,8 @@ char *_strchr(char *s, char c)
 		n++;
 		i++;
 	}
-	return (n);
+	if (n[i] =='\0')
+		return (NULL);
+	else
+		return (n);
 }
