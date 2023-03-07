@@ -3,7 +3,7 @@
  * _strpbrk - search source string about occurance in s
  * @s: pointer to source string
  * @accept: pointer to value to be scanned from
- * Retrun: pointer to string from first occurance of s letters
+ * Return: pointer to string from first occurance of s letters
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -33,7 +33,7 @@ char *_strpbrk(char *s, char *accept)
 		i++;
 	}
 	if (f == 0)
-		return NULL;
+		return (NULL);
 	else
 		return (n);
 
