@@ -38,6 +38,8 @@ char *_strstr(char *haystack, char *needle)
 	}
 	if (f == 0)
 		return (NULL);
+	else if (needle[0] == '\0')
+		return (m);
 	else
 		return (m + j - f);
 }
