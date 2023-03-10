@@ -4,7 +4,7 @@
  * main- prints your name
  * @argc: number of command line args
  * @argv: the actual args
- * Return: always 0
+ * Return: always return 0
  */
 int main(int argc, char *argv[])
 {
