@@ -9,32 +9,26 @@
  */
 int change(int i)
 {
-	if (i == 0)
-	{
-		return (0);
-	}
-	if (i >= 10)
-	{
-		return (1 + change(i - 10));
-	}
-	else if (i >= 25)
-	{
-		return (1 + change(i - 25));
-	}
-	else if (i >= 10)
-	{
-		return (1 + change(i - 10));
-	}
-	else if (i >= 1)
-	{
-		return (1 + change(i - 1));
-	}
-	else
+	if (i == 1)
 	{
 		return (1);
 	}
-
-
+	if (i > 25)
+	{
+		return (1 + change(i - 25));
+	}
+	else if (i > 10)
+	{
+		return (1 + change(i - 10));
+	}
+	else if (i > 5)
+	{
+		return (1 + change(i - 5));
+	}
+	else
+	{
+		return (1 + change(i - 2));
+	}
 }
 
 /**
