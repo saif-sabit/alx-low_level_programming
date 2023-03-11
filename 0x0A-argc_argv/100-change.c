@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			printf("%d\n", 0);
+			printf("0\n");
 			return (0);
 		}
 	}
@@ -64,5 +64,5 @@ int main(int argc, char *argv[])
 	{
 	printf("Error\n");
 	return (1);
-	}
+	}i
 }
