@@ -19,13 +19,13 @@ char *_strdup(char *str)
 	}
 	while (str[i] != '\0')
 		i++;
-	size = i;
+	size = i + 1;
 	p = (char *)malloc(size * sizeof(char));
 	if (p)
 	{
-		for (i = 0; i <= size; i++)
+		for (i = 0; i < size; i++)
 			p[i] = str[i];
-		p[i] ='\0';
+		p[i] = '\0';
 		return (p);
 	}
 	else
