@@ -1,7 +1,8 @@
 #include <stdlib.h>
 /**
- * _strdup - duplicates string
- * @str: charf pointer for string
+ * str_concat - duplicates string
+ * @s1: char pointer for string
+ * @s2: char pointer for string
  * Return: pointer to duplicated string or null if fails
  */
 char *str_concat(char *s1, char *s2)
@@ -17,9 +18,9 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	while (s1[i] != '\0')
 	i++;
-	while ( s2[j] != '\0')
+	while (s2[j] != '\0')
 		j++;
-	size = i + j;
+	size = i + j + 1;
 	p = (char *) malloc(size * sizeof(char));
 	if (p)
 	{
