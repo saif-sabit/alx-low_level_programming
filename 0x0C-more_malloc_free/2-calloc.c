@@ -24,6 +24,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		p[i] = 0;
 	}
-	free(p);
 	return (p);
 }
