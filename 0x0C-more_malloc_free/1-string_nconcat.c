@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * string_nconcat - concats n number of s2 chars
  * @s1: pointer to first string
@@ -9,7 +10,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	int size, i, j;
+	unsigned int size, i, j;
 
 	size = i = j = 0;
 	if (s1 == NULL)
