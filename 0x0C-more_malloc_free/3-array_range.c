@@ -4,7 +4,7 @@
  * array_range - allocates array for int numbers
  * @min: min value
  * @max: max value
- * Retrun: int array contains numbers from min to max include max & min
+ * Retrun - int array contains numbers from min to max include max & min
  */
 
 int *array_range(int min, int max)
