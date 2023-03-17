@@ -1,7 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main(int argc, char *argv[])
+int is_number(char *p)
 {
+	int i;
+	
+	i = 0;
+    while(p[i] != '\0')
+    {
+        if (!(p[i] > 47 && p[i] < 58))
+	{
+            return (1);
+	}
+            i++;
+    }
+    return (0);
+}
+int main(int argc, char *argv[])
+{        
+	if (is_number(argv[1])== 1 || is_number(argv[2])==1)
+	{
+        	printf("Error\n");
+		exit(98);
+        }
 	if (argc == 3)
 	{
         int i = atoi(argv[1]);
