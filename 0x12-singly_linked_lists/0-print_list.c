@@ -5,7 +5,7 @@
 /**
  * print_list - prints list contents
  * @h: pointer to a single list
- * Return - size of printed list
+ * Return: size of printed list
  */
 
 size_t print_list(const list_t *h)
