@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+/**
+ * add_node_end - Adds node into the last
+ * @head: pointer to what head points to
+ * @str: string data
+ * Return: node added
+ */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *temp;
