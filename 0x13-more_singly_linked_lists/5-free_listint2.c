@@ -1,12 +1,17 @@
 #include "lists.h"
 #include <stdlib.h>
+/**
+ * free_listint2 - fres linkedlist
+ * @head: pointer to head pointer
+ */
 void free_listint2(listint_t **head)
 {
-	listint_t *temp ;
+	listint_t *temp;
 	listint_t *tmp;
 
 	temp = (*head);
-	while(temp)
+
+	while (temp)
 	{
 		tmp = temp;
 		temp = temp->next;
