@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * get_nodeint_ata_index- returns node in given index
+ * get_nodeint_at_index- returns node in given index
  * @head: pointer to int list
  * @index: meant index to be searched
  * Return: node at given index or NULL if doesn't exist
