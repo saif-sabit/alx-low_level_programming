@@ -19,29 +19,29 @@ void copy_textfile(const char *file_from, const char *file_to)
 
 	fd = open(file_from, O_RDONLY);
 	n = read(fd, buf, 1024);
-	if (fd == -1 || n == -1)
+	if (fd == -1 || n == -1 || !file_from)
 	{
-		dprintf(2, "Error: Can't read from file %s", file_from);
+		dprintf(2, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	fd2 = open(file_to, O_CREAT | O_RDWR | O_TRUNC, 0644);
+	fd2 = open(file_to, O_RDWR | O_CREAT |O_TRUNC, 0644);
 	wn = write(fd2, buf, n);
 	if (wn == -1 || fd2 == -1)
 	{
-		dprintf(2, "Error: Can't write to %s", file_to);
+		dprintf(2, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
 	free(buf);
 	cs = close(fd);
 	if (cs != 0)
 	{
-		dprintf(2, "Error: Can't close fd %d", fd);
+		dprintf(2, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 	cs2 = close(fd2);
 	if (cs2 != 0)
 	{
-		dprintf(2, "Error: Can't close fd %d", fd2);
+		dprintf(2, "Error: Can't close fd %d\n", fd2);
 		exit(100);
 	}
 }
