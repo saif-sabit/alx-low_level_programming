@@ -17,7 +17,7 @@ void copy_textfile(const char *file_from, const char *file_to)
 
 	buf = malloc(1024 * sizeof(char));
 	fd = open(file_from, O_RDONLY);
-	if (fd == -1)
+	if (fd == -1 || !buf)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
