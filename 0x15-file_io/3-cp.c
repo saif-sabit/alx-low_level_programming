@@ -42,6 +42,7 @@ void copy_textfile(const char *file_from, const char *file_to)
 		exit(99);
 	}
 	fd2 = open(file_to, O_WRONLY | O_APPEND);
+	n = read(fd, buf, 1024);
 	} while (n > 0);
 	free(buf);
 	cs = close(fd);
