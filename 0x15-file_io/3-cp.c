@@ -41,6 +41,7 @@ void copy_textfile(const char *file_from, const char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
+	fd2 = open(file_to, O_WRONLY | O_APPEND);
 	} while (n > 0);
 	free(buf);
 	cs = close(fd);
