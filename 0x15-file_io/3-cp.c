@@ -18,22 +18,21 @@ void copy_textfile(const char *file_from, const char *file_to)
 	buf = malloc(1024 * sizeof(char));
 
 	fd = open(file_from, O_RDONLY);
-	do
-	{
+	do {
 	n = read(fd, buf, 1024);
 	if (fd == -1 || n == -1 || !file_from)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	fd2 = open(file_to, O_WRONLY | O_CREAT |O_TRUNC, 0644);
+	fd2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0644);
 	wn = write(fd2, buf, n);
 	if (wn == -1 || fd2 == -1)
 	{
 		dprintf(2, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
-	}while(n > 0);
+	} while (n > 0);
 	free(buf);
 	cs = close(fd);
 	if (cs == -1)
