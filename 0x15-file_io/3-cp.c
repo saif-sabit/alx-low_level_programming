@@ -20,7 +20,7 @@ void copy_textfile(const char *file_from, const char *file_to)
 	fd = open(file_from, O_RDONLY);
 	do {
 	n = read(fd, buf, 1024);
-	if (fd == -1 || n == -1 || !file_from)
+	if (fd == -1 || n == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", file_from);
 		exit(98);
@@ -59,6 +59,11 @@ int main(int ac, char **av)
 	{
 		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
+	}
+	if (!av[1])
+	{
+		dprintf(2, "Error: Can't read from file %s\n", av[1]);
+		exit(98);
 	}
 	copy_textfile(av[1], av[2]);
 	return (0);
