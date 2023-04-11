@@ -22,9 +22,16 @@ unsigned int binary_to_uint(const char *b)
 		ret += (b[i - 1 - n] - '0') *  power(2, n);
 	return (ret);
 }
+/**
+ * power- returns the power of number and base
+ * @base: base of number
+ * @exponent: exponent
+ * Return: power of number
+ */
 int power(int base, int exponent)
 {
-	int i, result=1;
+	int i, result = 1;
+
 	for (i = exponent; i > 0; i--)
 		result = result * base;
 	return (result);
