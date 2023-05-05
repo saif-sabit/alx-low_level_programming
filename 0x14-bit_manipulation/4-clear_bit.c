@@ -1,5 +1,5 @@
 /**
- *set_bit- clears bit at index
+ * clear_bit- clears bit at index
  * @n: pointer to length
  * @index: index of needed bit
  * Return: 1 on success -1 and -1 if error
