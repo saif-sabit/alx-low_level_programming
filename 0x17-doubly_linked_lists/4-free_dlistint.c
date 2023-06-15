@@ -5,5 +5,10 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-	fre(head);
+	while(head)
+	{
+		free(head);
+		head = head->next;
+	}
+
 }
