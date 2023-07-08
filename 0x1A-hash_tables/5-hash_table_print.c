@@ -18,7 +18,7 @@ void hash_table_print(const hash_table_t *ht)
 	{
 		if (ht->array[i] != NULL)
 		{
-			if (comma= 1)
+			if (comma == 1)
 				printf(", ");
 
 			node = ht->array[i];

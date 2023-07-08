@@ -21,12 +21,12 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	node = ht->array[index];
 	while (node && strcmp(node->key, key) != 0)
 		node = node->next;
-    if (node == NULL)
-    {
-        return (NULL);
-    }
-    else
-    {
-        return (node->value);
-    }
+	if (node == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+		return (node->value);
+	}
 }
