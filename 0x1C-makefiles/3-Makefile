@@ -1,0 +1,10 @@
+# Makefile 'school' executable file
+
+CC: gcc
+SRC: main.c school.c
+OBJ: $(SRC:.c=.o)
+RM:
+NAME: school
+
+all:$(OBJ)
+        $(CC) $(OBJ) -o $(NAME)
